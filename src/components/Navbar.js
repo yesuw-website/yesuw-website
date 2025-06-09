@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -29,23 +30,26 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-content">
-        <a href="#home" className="nav-logo" onClick={() => scrollToSection('home')}>
+        <Link to="/" className="nav-logo" onClick={() => scrollToSection('home')}>
           YesUW
-        </a>
+        </Link>
         <div className={`nav-items ${isOpen ? 'active' : ''}`}>
           <div className="nav-links">
-            <a href="#about" className="nav-link" onClick={() => scrollToSection('about')}>
+            <a href="/#about" className="nav-link" onClick={() => scrollToSection('about')}>
               About
             </a>
-            <a href="#events" className="nav-link" onClick={() => scrollToSection('events')}>
+            <a href="/#events" className="nav-link" onClick={() => scrollToSection('events')}>
               Events
             </a>
-            <a href="#connect" className="nav-link" onClick={() => scrollToSection('connect')}>
+            <a href="/#connect" className="nav-link" onClick={() => scrollToSection('connect')}>
               Connect
             </a>
-            <a href="#contact" className="nav-link" onClick={() => scrollToSection('contact')}>
+            <a href="/#contact" className="nav-link" onClick={() => scrollToSection('contact')}>
               Contact
             </a>
+            <Link to="/members" className="nav-link">
+              Members
+            </Link>
           </div>
           <div className="nav-social">
             <a
