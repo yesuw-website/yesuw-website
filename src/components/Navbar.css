@@ -1,0 +1,148 @@
+.navbar {
+  background-color: var(--white);
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  padding: 0.5rem 2rem;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  color: var(--badger-red);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--badger-red);
+}
+
+.nav-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  color: var(--badger-red);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.social-link:hover {
+  opacity: 0.8;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.toggle-bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--badger-red);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.toggle-bar::before,
+.toggle-bar::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: var(--badger-red);
+  transition: all 0.3s ease;
+}
+
+.toggle-bar::before {
+  transform: translateY(-8px);
+}
+
+.toggle-bar::after {
+  transform: translateY(8px);
+}
+
+.toggle-bar.open {
+  background-color: transparent;
+}
+
+.toggle-bar.open::before {
+  transform: rotate(45deg);
+}
+
+.toggle-bar.open::after {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .nav-items {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 70%;
+    background-color: var(--white);
+    flex-direction: column;
+    padding: 6rem 2rem;
+    transition: right 0.3s ease;
+  }
+
+  .nav-items.active {
+    right: 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-social {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+} 

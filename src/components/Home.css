@@ -1,0 +1,314 @@
+.home {
+  padding-top: 60px; /* Account for fixed navbar */
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background-color: var(--badger-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero-content img {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin: 0;
+  color: white;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin: 0;
+  color: white;
+}
+
+/* Common Section Styles */
+.section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.section-content h2 {
+  color: var(--badger-red);
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* About Section */
+.about {
+  background-color: var(--white);
+}
+
+.about p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.mission-statement {
+  font-size: 1.1rem !important;
+  color: var(--text-dark);
+  opacity: 0.9;
+  max-width: 900px !important;
+}
+
+/* Remove unused styles */
+.about-grid,
+.about-card {
+  display: none;
+}
+
+/* Events Section */
+.events {
+  background-color: var(--white);
+  padding: 4rem 0;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.event-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-date {
+  background-color: var(--badger-red);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+}
+
+.event-date .month {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.event-date .day {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.event-details {
+  padding: 1rem;
+  flex: 1;
+}
+
+.event-details h3 {
+  margin: 0 0 0.5rem;
+  color: var(--badger-red);
+}
+
+.event-details p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+/* Connect Section */
+.connect {
+  background-color: var(--white);
+}
+
+.connect-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.connect-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: var(--text-dark);
+  transition: transform 0.3s ease;
+}
+
+.connect-card:hover {
+  transform: translateY(-5px);
+}
+
+.connect-card h3 {
+  color: var(--badger-red);
+  margin: 0 0 1rem;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #f5f5f5;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--badger-red);
+}
+
+.form-group textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: var(--badger-red);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #a00404;
+}
+
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.success-message {
+  color: #28a745;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.error-container {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-bottom: 0.5rem;
+}
+
+.error-details {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Instagram Feed Section */
+.instagram {
+  background-color: var(--white);
+  padding: 4rem 0;
+}
+
+.instagram-feed {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-embed {
+  width: 100%;
+  height: 600px;
+  border: none;
+  background: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-grid,
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .section-content {
+    padding: 3rem 1rem;
+  }
+
+  .about-grid,
+  .events-grid,
+  .connect-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .event-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .instagram-embed {
+    height: 500px;
+  }
+} 

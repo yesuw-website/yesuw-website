@@ -44,9 +44,6 @@ const Navbar = () => {
             <a href="/#connect" className="nav-link" onClick={() => scrollToSection('connect')}>
               Connect
             </a>
-            <a href="/#contact" className="nav-link" onClick={() => scrollToSection('contact')}>
-              Contact
-            </a>
             <Link to="/members" className="nav-link">
               Members
             </Link>
