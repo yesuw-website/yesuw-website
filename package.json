@@ -2,7 +2,7 @@
   "name": "yesuw-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://yesuw.com",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@fullcalendar/core": "^6.1.17",
