@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/yesuw-website/static/css/main.40ed881c.css",
-    "main.js": "/yesuw-website/static/js/main.b3ddc012.js",
-    "index.html": "/yesuw-website/index.html",
-    "main.40ed881c.css.map": "/yesuw-website/static/css/main.40ed881c.css.map",
-    "main.b3ddc012.js.map": "/yesuw-website/static/js/main.b3ddc012.js.map"
+    "main.css": "./static/css/main.e9252641.css",
+    "main.js": "./static/js/main.b9768347.js",
+    "static/js/453.4244e0dd.chunk.js": "./static/js/453.4244e0dd.chunk.js",
+    "index.html": "./index.html",
+    "main.e9252641.css.map": "./static/css/main.e9252641.css.map",
+    "main.b9768347.js.map": "./static/js/main.b9768347.js.map",
+    "453.4244e0dd.chunk.js.map": "./static/js/453.4244e0dd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40ed881c.css",
-    "static/js/main.b3ddc012.js"
+    "static/css/main.e9252641.css",
+    "static/js/main.b9768347.js"
   ]
 }
