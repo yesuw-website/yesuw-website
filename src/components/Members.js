@@ -4,29 +4,43 @@ import './Members.css';
 const Members = () => {
   // Executive Board members
   const executiveBoard = [
-    { name: "John Doe", year: "2024", image: "https://via.placeholder.com/200", position: "President" },
-    { name: "Jane Smith", year: "2024", image: "https://via.placeholder.com/200", position: "VP of Operations" },
-    { name: "Mike Johnson", year: "2024", image: "https://via.placeholder.com/200", position: "VP of Marketing" },
-    { name: "Sarah Wilson", year: "2024", image: "https://via.placeholder.com/200", position: "VP of Finance" },
+    { name: "Arnav Srivastav", year: "2026", image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F024%2F558%2F280%2Fnon_2x%2Fbusinessman-isolated-illustration-ai-generative-free-png.png&f=1&nofb=1&ipt=8b04ec501c61a8232fd0c630370d46e9df2e8dd8123bad3f2585b531da445002", position: "President" },
+    { name: "Frankie Glave", year: "2027", image: "https://via.placeholder.com/200", position: "VP of Operations" },
+    { name: "Veronica Wendt", year: "2026", image: "https://via.placeholder.com/200", position: "VP of Marketing" },
+    { name: "Casey Hagen", year: "2026", image: "https://via.placeholder.com/200", position: "VP of Finance" },
+    { name: "Shradha Godishala", year: "2027", image: "https://via.placeholder.com/200", position: "Secretary" },
+
   ];
 
   // Regular members
   const members = [
-    { name: "Alex Brown", year: "2025", image: "https://via.placeholder.com/200" },
-    { name: "Emily Davis", year: "2025", image: "https://via.placeholder.com/200" },
-    { name: "David Miller", year: "2025", image: "https://via.placeholder.com/200" },
-    { name: "Lisa Anderson", year: "2025", image: "https://via.placeholder.com/200" },
-    { name: "Tom Wilson", year: "2025", image: "https://via.placeholder.com/200" },
-    { name: "Rachel Green", year: "2025", image: "https://via.placeholder.com/200" },
+    { name: "Basieem S.", year: "2027", image: "https://via.placeholder.com/200" },
+    { name: "Andre Good", year: "2025", image: "https://via.placeholder.com/200" },
+    { name: "Beckett Wedren", year: "2025", image: "https://via.placeholder.com/200" },
+    { name: "Julia Camp", year: "2025", image: "https://via.placeholder.com/200" },
+    { name: "Lauren Ayer", year: "2028", image: "https://via.placeholder.com/200" },
+    { name: "Lauren Ruff", year: "2025", image: "https://via.placeholder.com/200" },
+   { name: "Srinika Pattaswamy", year: "2028", image: "https://via.placeholder.com/200" },
+   
   ];
 
   // Alumni
   const alumni = [
-    { name: "Chris Lee", year: "2023", image: "https://via.placeholder.com/200" },
-    { name: "Jessica Park", year: "2023", image: "https://via.placeholder.com/200" },
-    { name: "Michael Chen", year: "2022", image: "https://via.placeholder.com/200" },
-    { name: "Sophia Kim", year: "2022", image: "https://via.placeholder.com/200" },
-  ];
+    { name: "Cole Gullstrand", year: "2024", image: "https://via.placeholder.com/200" },
+    { name: "Blake Koehler", year: "2024", image: "https://via.placeholder.com/200" },
+    { name: "Justin Benz", year: "2024", image: "https://via.placeholder.com/200" },
+    { name: "Ian Henjum", year: "2024", image: "https://via.placeholder.com/200" },
+    { name: "Felix Mousigian", year: "2025", image: "https://via.placeholder.com/200" },
+ { name: "Adam Schirtzinger", year: "2025", image: "https://via.placeholder.com/200" },
+ { name: "Elijah Schwab", year: "2025", image: "https://via.placeholder.com/200" },
+  { name: "Colin Macy", year: "2025", image: "https://via.placeholder.com/200" },
+ { name: "Maria De Martino", year: "2025", image: "https://via.placeholder.com/200" },
+ { name: "Alec Cornelio", year: "2025", image: "https://via.placeholder.com/200" },
+ { name: "Akshay Bodla", year: "2025", image: "https://via.placeholder.com/200" },
+ { name: "Michael Penny", year: "2025", image: "https://via.placeholder.com/200" },
+ 
+  ]
+  ;
 
   const ExecutiveCard = ({ member }) => (
     <div className="member-card executive">
