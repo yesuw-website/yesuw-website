@@ -1,26 +1,38 @@
 import React from 'react';
 import './Members.css';
-
+import frankiePic from "../peoplesPics/Frankie_WebsitePic.jpg";
+import veronica from "../peoplesPics/Veronica.jpeg"
+import calvin from "../peoplesPics/calvin.JPG"
+import maggie from "../peoplesPics/Maggiewebsitepic.jpg"
+import laurenR from "../peoplesPics/lauren.JPG"
+import arnav from "../peoplesPics/arnav.png"
+import shraddha from "../peoplesPics/shradda.jpg"
+import ellie from "../peoplesPics/ellie.jpeg"
+import Basieem from "../peoplesPics/BasieemWebsite.jpg"
+import { compareObjs, getDayClassNames } from '@fullcalendar/core/internal.js';
 const Members = () => {
   // Executive Board members
   const executiveBoard = [
-    { name: "Arnav Srivastav", year: "2026", image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F024%2F558%2F280%2Fnon_2x%2Fbusinessman-isolated-illustration-ai-generative-free-png.png&f=1&nofb=1&ipt=8b04ec501c61a8232fd0c630370d46e9df2e8dd8123bad3f2585b531da445002", position: "President" },
-    { name: "Frankie Glave", year: "2027", image: "https://via.placeholder.com/200", position: "VP of Operations" },
-    { name: "Veronica Wendt", year: "2026", image: "https://via.placeholder.com/200", position: "VP of Marketing" },
+    { name: "Arnav Srivastav", year: "2026", image: arnav, position: "President" },
+    { name: "Frankie Glave", year: "2027", image: frankiePic, position: "VP of Operations" },
+    { name: "Veronica Wendt", year: "2026", image: veronica, position: "VP of Marketing" },
     { name: "Casey Hagen", year: "2026", image: "https://via.placeholder.com/200", position: "VP of Finance" },
-    { name: "Shradha Godishala", year: "2027", image: "https://via.placeholder.com/200", position: "Secretary" },
+    { name: "Shradha Godishala", year: "2027", image: shraddha, position: "Secretary" },
 
   ];
 
   // Regular members
   const members = [
-    { name: "Basieem S.", year: "2027", image: "https://via.placeholder.com/200" },
+    { name: "Basieem S.", year: "2027", image: Basieem },
     { name: "Andre Good", year: "2025", image: "https://via.placeholder.com/200" },
     { name: "Beckett Wedren", year: "2025", image: "https://via.placeholder.com/200" },
     { name: "Julia Camp", year: "2025", image: "https://via.placeholder.com/200" },
     { name: "Lauren Ayer", year: "2028", image: "https://via.placeholder.com/200" },
-    { name: "Lauren Ruff", year: "2025", image: "https://via.placeholder.com/200" },
+    { name: "Lauren Ruff", year: "2025", image: laurenR},
    { name: "Srinika Pattaswamy", year: "2028", image: "https://via.placeholder.com/200" },
+   { name: "Calvin ", year: "2028", image: calvin },
+   { name: "Maggie Paulios", year: "2028", image: maggie},
+    { name: "Ellie Arbeiter", year: "2028", image: ellie}
    
   ];
 
@@ -100,3 +112,5 @@ const Members = () => {
 };
 
 export default Members; 
+
+
